@@ -34,8 +34,6 @@ class CoinFlipper extends Component {
     this.setState({ toplamAtis: this.state.toplamAtis + 1 });
     // 1 saniye kadar dönmesi yeterli, bu yüzden 1 saniye sonra "flipping" durmunu tekrar "false" yapıyoruz.
     setTimeout(() => this.setState({ flipping: false }), 1000);
-
-    console.log(this.state.side);
   };
 
   render() {
